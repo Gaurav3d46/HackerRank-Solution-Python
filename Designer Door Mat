@@ -1,0 +1,13 @@
+n,m=map(int,input().split())
+l=[]
+for i in range(0,int((n-1)/2)):
+    s=('.|.'*int(((m-1)/2)-n-i))
+    l.append((s[::-1]+s[3:]).center(m,'-'))
+print('\n'.join(l[::-1]))
+
+print(('WELCOME').center(m,'-'))
+
+for i in range(int((n-1)/2)+1,n):
+    s=('.|.'*int(((m-1)/2)-n-i))
+    l.append((s[::-1]+s[3:]).center(m,'-'))
+print('\n'.join(l[0:(int((n-1)/2))]))
