@@ -1,0 +1,6 @@
+from itertools import permutations
+s=input().split()
+s[0]=(sorted(s[0]))
+r=list(permutations(s[0],int(s[1])))
+for i in range(len(r)):
+    print(*r[i],sep="")
