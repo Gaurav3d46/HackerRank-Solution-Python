@@ -1,0 +1,12 @@
+n = int(input())
+a=tuple(map(int,input().split()))
+m=int(input())
+b=tuple(map(int,input().split()))
+a=set(a)
+b=set(b)
+c=a.difference(b)
+d=b.difference(a)
+c.update(d)
+c=sorted(list(set(c)))
+for i in range(len(c)):
+    print(c[i])
