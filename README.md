@@ -1,2 +1,2 @@
-# new
+# codes
 codes of hacker ranks
