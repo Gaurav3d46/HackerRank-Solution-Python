@@ -1,0 +1,11 @@
+n,m=input().split()
+arr=input().split()
+a=set(input().split())
+b=set(input().split())
+counter=0
+for i in arr:
+    if i in a:
+        counter += 1
+    elif i in b:
+        counter -= 1
+print(counter)
