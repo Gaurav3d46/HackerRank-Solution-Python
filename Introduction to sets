@@ -1,0 +1,13 @@
+def average(array):
+    
+    array=(sum(set(arr)))/len(set(arr))
+    array="{:.3f}".format(array)
+    
+    return array
+    
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
