@@ -1,0 +1,12 @@
+n=int(input())
+student_score={}
+for i in range(n):
+    name,*line=input().split()
+    scores=list(map(float,line))
+    student_score[name]=scores
+
+querry_name=input()
+
+a=student_score[querry_name]
+s=sum(a)/3.0
+print("{:.2f}".format(s))
