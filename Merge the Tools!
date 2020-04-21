@@ -1,0 +1,12 @@
+import textwrap
+def merge_the_tools(string, k):
+    a=textwrap.wrap(string,k)
+    for i in range(int(len(string)/k)):
+        j=list(dict.fromkeys(a[i]))
+        str1=""
+        str1=str1.join(j)
+        print(str1)
+    return str1
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
