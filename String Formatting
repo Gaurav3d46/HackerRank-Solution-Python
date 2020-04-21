@@ -1,0 +1,11 @@
+def print_formatted(number):
+    w=len(bin(n)[2:].rstrip("L"))+1
+    for i in range(1, n + 1):
+        a = (str(i).rjust(w-1)+ oct(i)[2:].rjust(w)+hex(i)[2:].upper().rjust(w) + bin(i)[2:].rjust(w))
+        print(a)
+    return a
+
+
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)
