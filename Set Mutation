@@ -1,0 +1,22 @@
+
+n=int(input())
+a=set(input().split())
+m=int(input())
+d=0
+for i in range(m):
+    b=[]
+    c=[]
+    b=list(input().split())
+    c=list(set(input().split()))
+    if b[0]=="intersection_update":
+        a.intersection_update(c)
+    elif b[0]=="update":
+        a.update(c)
+    elif b[0]=="symmetric_difference_update":
+        a.symmetric_difference_update(c)
+    elif b[0]=="difference_update":
+        a.difference_update(c)  
+e=list(a)
+for i in range(0,len(e)):
+    d=d+int(e[i])
+print(d)
